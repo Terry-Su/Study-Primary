@@ -8,7 +8,7 @@
 // import './subscribePulish'
 
 // promise
-// import './promise'
+import './promise'
 
 // generator(thunk)
 // import './generatorWithChunk'
@@ -17,4 +17,4 @@
 // import './generatorWithPromise'
 
 // async/await(ES2017)
-import './asyncAwait'
+// import './asyncAwait'

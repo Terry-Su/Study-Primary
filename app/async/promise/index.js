@@ -5,7 +5,7 @@ const getPromise = (func) => new Promise( resolve => {
 	func( () => { resolve() } )
 })
 
-Promise.resolve( getPromise(f1) )
+getPromise(f1)
 	.then( () => getPromise(f2) )
 	.then( () => getPromise(f3) )
 
