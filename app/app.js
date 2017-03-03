@@ -1,5 +1,9 @@
 // View module by cancel annotating target module and annotating other modules
+//view result by excuting bundle.js
 
 
-// async ( sync the async functions,view result by excute bundle.js )
-import './async'
+// sync the async functions
+// import './async'
+
+// practice regexp
+import './regexp'

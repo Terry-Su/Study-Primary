@@ -3316,7 +3316,7 @@ module.exports = g;
 "use strict";
 
 
-__webpack_require__(117);
+__webpack_require__(116);
 
 /***/ }),
 /* 115 */
@@ -3354,14 +3354,31 @@ define(String.prototype, "padRight", "".padEnd);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(113)))
 
 /***/ }),
-/* 116 */,
+/* 116 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(118);
+
+/***/ }),
 /* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(303);
+// Target: Write a JavaScript program to test the first character of a string is uppercase or not
+
+var getResult = function getResult(str) {
+	var r = /^[A-Z]/;
+	return r.test(str);
+};
+
+// test
+console.log(getResult('abc')); // false
+console.log(getResult('Abc')); // true
 
 /***/ }),
 /* 118 */
@@ -3370,35 +3387,7 @@ __webpack_require__(303);
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var f1 = exports.f1 = function f1(callback) {
-  return setTimeout(function () {
-    console.log("f1");
-    if (callback) {
-      callback();
-    }
-  }, 1000);
-};
-
-var f2 = exports.f2 = function f2(callback) {
-  return setTimeout(function () {
-    console.log("f2");
-    if (callback) {
-      callback();
-    }
-  }, 1000);
-};
-
-var f3 = exports.f3 = function f3(callback) {
-  return setTimeout(function () {
-    console.log("f3");
-    if (callback) {
-      callback();
-    }
-  }, 1000);
-};
+__webpack_require__(117);
 
 /***/ }),
 /* 119 */
@@ -8379,29 +8368,6 @@ process.umask = function() { return 0; };
 __webpack_require__(115);
 module.exports = __webpack_require__(114);
 
-
-/***/ }),
-/* 303 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _util = __webpack_require__(118);
-
-var getPromise = function getPromise(func) {
-	return new Promise(function (resolve) {
-		func(function () {
-			resolve();
-		});
-	});
-};
-
-getPromise(_util.f1).then(function () {
-	return getPromise(_util.f2);
-}).then(function () {
-	return getPromise(_util.f3);
-});
 
 /***/ })
 /******/ ]);
